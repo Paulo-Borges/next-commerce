@@ -1,7 +1,13 @@
 1- npx create-next-app@latest ( install next latest version )
 2- creating the folder components, lib, types
 3- lib ( todos arquivos que vão auxilar no uso do banco de dados )
-4 types ( modelos do typescript)
+4- types ( modelos do typescript)
+
+5-Zustand
+6-Clerk
+7-Stripe
+8- Prisma
+9- Vercel Postgres
 
 
 
