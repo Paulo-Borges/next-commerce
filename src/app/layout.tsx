@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,10 @@ export default function RootLayout({
         <main className="bg-slate-700 h-screen p-16">
         {children}
         </main>
+        <nav className="fixed bottom-0 w-full flex items-center justify-center py-2 px-8 z-50 bg-slate-800 text-gray-200">
+            
+            <Footer />
+        </nav>
         </body>
     </html>
   );
