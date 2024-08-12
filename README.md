@@ -1,3 +1,13 @@
+1- npx create-next-app@latest ( install next latest version )
+2- creating the folder components, lib, types
+3- lib ( todos arquivos que vão auxilar no uso do banco de dados )
+4 types ( modelos do typescript)
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
