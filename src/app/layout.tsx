@@ -26,7 +26,6 @@ export default function RootLayout({
         {children}
         </main>
         <nav className="fixed bottom-0 w-full flex items-center justify-center py-2 px-8 z-50 bg-slate-800 text-gray-200">
-            
             <Footer />
         </nav>
         </body>
