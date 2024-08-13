@@ -2,6 +2,7 @@
 2- creating the folder components, lib, types
 3- lib ( todos arquivos que vão auxilar no uso do banco de dados )
 4- types ( modelos do typescript)
+5- Api_Fake (https://fakestoreapi.com/products)
 
 5-Zustand
 6-Clerk
