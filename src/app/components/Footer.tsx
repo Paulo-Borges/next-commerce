@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
             <Link 
             href="https://github.com/Paulo-Borges/next-commerce" target="_blank" 
-            className="uppercase font-bold text-md h-12 flex items-center ">
+            className=" font-bold text-md h-12 flex items-center ">
                  Borges 2024
             </Link>
         </div>
