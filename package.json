@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "prisma generate && next dev",
+    "build": "prisma generate && prisma db push && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,8 +16,7 @@
     "next": "14.2.5",
     "prisma": "^5.18.0",
     "react": "^18",
-    "react-dom": "^18",
-    "svix": "^1.29.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
