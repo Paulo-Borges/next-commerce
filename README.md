@@ -3,9 +3,17 @@
 3- lib ( todos arquivos que vão auxilar no uso do banco de dados )
 4- types ( modelos do typescript)
 5- Api_Fake (https://fakestoreapi.com/products)
+6- clsx (bilioteca de fontes)
 
 5-Zustand
-6-Clerk
+6-Clerk(
+    -Gerenciamento de estado
+    -proteção de Rotas
+    -Páginas de login e registro
+    -Armazenamento de Dados
+    -Endpoinyt (conexão com serviço de autenticação)
+    -Segurança(Token)
+)
 7-Stripe
 8- Prisma
 9- Vercel Postgres

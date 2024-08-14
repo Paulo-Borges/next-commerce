@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 import clsx from "clsx";
+import { ClerkProvider } from "@clerk/nextjs";
+import { ptBR } from "@clerk/localizations";
+
 
 export const metadata: Metadata = {
   title: "next E-commerce 13",
@@ -17,12 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <ClerkProvider localization={ptBR}>
+      <html lang="en">
       <body className={clsx(inter.className, "bg-slate-700")}>
-        <nav className="fixed top-0 w-full flex items-center py-2 px-8 justify-between z-50 bg-slate-800 text-gray-200">
-            
             <Navbar />
-        </nav>
         <main className=" h-screen p-16">
         {children}
         </main>
@@ -31,5 +32,8 @@ export default function RootLayout({
         </nav>
         </body>
     </html>
+
+    </ClerkProvider>
+    
   );
 }
