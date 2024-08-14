@@ -38,40 +38,8 @@ async function handler(request: Request) {
         'svix-signature': headerList.get('svix-signature') 
     }
     const wh = new Webhook(webhookSecret)
-    let evt: Event | null = null
-
-    try {
-        evt =  wh.verify(
-            JSON.stringify(payload),
-            heads as IncomingHttpHeaders & WebhookRequiredHeaders
-        ) as Event
-    } catch (err) {
-        console.error((err as Error).message)
-        return NextResponse.json({}, { status: 400})
-    }
-    const eventType: EventType = evt.type
-    if (eventType === 'user.created' || eventType === "user.updated") {
-        const {
-            id,
-            first_name,
-            last_name,
-            email_addresses,
-            primary_email_address_id,
-            ...attributes
-        } = evt.data
-
-        await prisma.user.upsert({
-            where: { externalId: id as string },
-            create: {
-                externalId: id as string,
-                attributes
-            },
-            update: {
-                attributes
-            }
-        })
-    }
-    return NextResponse.json({}, { status: 200 })
+    const evt: Event | null = null
+    
 }
 
 export const GET = handler

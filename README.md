@@ -5,8 +5,7 @@
 5- Api_Fake (https://fakestoreapi.com/products)
 6- clsx (bilioteca de fontes)
 
-5-Zustand
-6-Clerk(
+7-Clerk(
     -Gerenciamento de estado
     -proteção de Rotas
     -Páginas de login e registro
@@ -14,9 +13,12 @@
     -Endpoinyt (conexão com serviço de autenticação)
     -Segurança(Token)
 )
-7-Stripe
-8- Prisma
-9- Vercel Postgres
+
+8- Prisma ORM
+9- svix ( para configurar os Endpoints)
+-Zustand
+-Stripe
+- Vercel Postgres
 
 
 
